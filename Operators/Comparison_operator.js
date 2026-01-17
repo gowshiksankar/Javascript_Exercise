@@ -9,12 +9,7 @@ console.log(y!==true);//not euqal to check value & datatype
 let z=10
 console.log(x<z); // lesser than <
 console.log(x>z); // greater than >
+
 y=5
 console.log(x<=y); // lesser than  or equal to <=
 console.log(x>=y); // greater than >=
-
-
-
-
-
-

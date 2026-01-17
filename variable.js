@@ -1,3 +1,28 @@
+//global scope=>var,let,const
+const/let/var name="stranger Things"; //if you put var/let/const all are working
+function call(){
+  console.log(name);
+}
+call()
+console.log(name)
+
+//functional scope =>var,let,const => It means funcion ku ulla mattume antha valuea access panna mudiyum
+function print()
+{
+  var/let/const ott="Netflix" //if put var/let/const all are not working
+  console.log(ott)
+}
+print()
+console.log(ott) //it will not work bcz of functional scope
+
+//block scope=>let/const
+if(true){
+  const series="From"//if put let/const it will  not work but var keyword will work
+}
+console.log(series)  
+
+//example :2
+
 let x = 10; // global Scope
 function demo() {
   console.log(x); // can access
@@ -6,7 +31,7 @@ function demo() {
 demo();
 console.log(x); // can access here also
 
-//Block Scope
+//Block Scope  It include if,for,while,switch,{}
 {
   let a = 20; //  If you change 'let' into 'var' it will work
   console.log(a); // works
@@ -34,10 +59,10 @@ function strangerthings(){
         const henry="mind flayer";// block scope
         console.log(henry)
     }
-    console.log(henry) //Not working because of block scope 
+    console.log(henry) // ❌ Not working because of block scope 
 }
 console.log(couples);
-console.log(characters); //it will not work even var keyword also
+console.log(characters); // ❌ it will not work even var keyword also
 strangerthings()
    
 
@@ -47,7 +72,7 @@ strangerthings()
 
 
 var gowshik="name";
-let gowshik="Amazon"
+let gowshik="Amazon" // ❌ not able to assign
 console.log(gowshik);   //It shown error because once you decalared a variable name to a keyword 'var' the same variable you wont be able to assign with the 'let' keyword
 
 //Hoisting

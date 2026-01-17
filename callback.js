@@ -1,11 +1,12 @@
 //Eg:1
 function welcome(name, callback) {
     console.log("My name:" + " " + name);
+    callback(name)
 
-    setTimeout(() => {callback(name)}, 3000);
+    //setTimeout(() => {callback(name)}, 3000);
 }
 function goodbye(tu) {
-    console.log("goodbye" + " " + tu)
+    setTimeout(()=>{console.log("goodbye "+tu)},3000)
 }
 welcome("gowshik", goodbye)
 
@@ -41,12 +42,11 @@ hawkins("jane",upsidedown,dimensionx);        //upsidedown=callback=>upsidedown(
 
 //Eg:5
 
-function heroine(name,callback1,callback2){
+function heroine(name,callback1,callback2)
+{
     console.log("heroine name:"+" "+name);
     setTimeout(() => { callback1()}, 3000);
-    setTimeout(() => {
-        callback2()
-    },4000);
+    setTimeout(() => { callback2() },4000);
 }
 function doctor(){
     console.log("Hi Trisha I'am the doctor, how can i help you ?");    

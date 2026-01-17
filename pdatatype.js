@@ -32,7 +32,7 @@ console.log(big);
 let id = Symbol("123");  // unique values used for unique keys
 console.log(id);
 
-let eg1=3.44444;
+let eg1=3.444442344456;
 console.log(parseFloat(eg1));  // output:3.4444
 console.log(parseInt(eg1)); //output: 3
 
