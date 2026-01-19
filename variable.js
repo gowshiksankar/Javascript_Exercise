@@ -84,4 +84,3 @@ function hoisting()
 }
 console.log(a); //It will work because javascript consider as var a=20; this is called Hoisting.  
 console.log(b); //It will not work b is not defined
-  
