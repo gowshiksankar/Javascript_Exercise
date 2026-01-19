@@ -20,7 +20,7 @@ console.log(result2);
 let result3=numbers.findLastIndex((num)=>num>9)
 console.log(result3);
 
-let result4=numbers.findLast((num)=>num>9) //it search right to left and it return the element not index
+let result4=numbers.findLast((num)=>num>9) //It search right to left and it return the element not index
 console.log(result4);
 
 
